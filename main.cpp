@@ -24,7 +24,7 @@ int main()
 
 out.close();
 
-
+//test
     ifstream in("text.txt");
     int num;
     string players;
