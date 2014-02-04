@@ -5,35 +5,33 @@ using namespace std;
 
 int main()
 {
+
     ofstream out("text.txt");
-    out<<1234<<' ';
-    out<<3.5<<' ';
-    out<<5.2f<<' ';
-    out<<false<<' ';
-    out<<"fdsa"<<' ';
-    out.close();
+    for(int i=0; i<2; i++){
+        int scores;
+        string nombres;
+
+       cout<<"ingrese nombre"<<endl;
+        cin>>nombres;
+        cout<<"ingrese score"<<endl;
+        cin>>scores;
+
+        out<<nombres<<' ';
+        out<<scores<<' ';
 
 
+    }
 
-    ifstream in("test.txt");
-    int a;
-    double b;
-    float c;
-    bool d;
-    char e;
-    string f;
+out.close();
 
-    in>>a;
-    in>>b;
-    in>>c;
-    in>>d;
-    in>>e;
 
-    cout<<a;
-    cout<<b;
-    cout<<c;
-    cout<<d;
-    cout<<e;
+    ifstream in("text.txt");
+    int num;
+    string players;
+    while(in>>num)
+    {
+        cout<<num<<endl;
+    }
 
     return 0;
 }
